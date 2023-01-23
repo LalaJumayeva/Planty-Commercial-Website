@@ -112,5 +112,7 @@ body {
 }
 
 #magic button{
-    
+ width: 30%;
+ color:  rgb(243, 246, 249);
+ border-color: rgb(195, 196, 196);
 }
