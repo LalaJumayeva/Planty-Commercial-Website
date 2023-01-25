@@ -121,5 +121,220 @@ body {
 }
 
 
-
 /* features section */
+
+#features {
+    text-align: center;
+}
+
+#features h1 {
+    font-weight: 600;
+    color: #3c3c3c;
+}
+
+.featured-products {
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#features .feature-box {
+    margin: 15px 0;
+    position: relative;
+    width: 22%;
+    height: 300px;
+    box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.06);
+    background-color: #E8F0EF;
+    border: #000000 1px;
+    border-radius: 15px;
+    /* text-align: right; */
+}
+
+#features .feature-box:hover {
+    box-shadow: 10px 10px 54px rgb(0, 0, 0, 0.1);
+}
+
+.feature-box a {
+    z-index: 44;
+    position: absolute;
+    top: 4%;
+    right: 12%;
+    align-items: center;
+    color: #2a6f2a;
+    text-decoration: none;
+
+}
+
+.feature-box i {
+    position: absolute;
+    top: 4px;
+    padding-left: 15%;
+}
+
+
+.feature-box img {
+    position: absolute;
+    left: 0px;
+}
+
+.feature-box .img1 {
+    top: -60px;
+    left: -100px;
+}
+
+.feature-box .img3 {
+    top: -30px;
+}
+
+.feature-box .img4 {
+    top: -70px;
+    left: -20px;
+}
+
+
+/* section p1 classes */
+.section-p1 {
+    padding: 40px 100px;
+}
+
+
+/* products section */
+#products {
+    text-align: center;
+}
+
+#products .pro {
+    position: relative;
+    width: 23%;
+    min-width: 250px;
+    padding: 15px 12px 0 12px;
+    border: 1px solid #bcc0bd;
+    background-color: #fefefe;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 20px 0;
+    transition: 0.2s ease;
+}
+
+#products .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.pro img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#products .pro .des {
+    text-align: start;
+    padding: 10px;
+}
+
+#products .pro .des span {
+    color: #3ab23a;
+    font-size: 14px;
+}
+
+
+#products .pro .des h5 {
+    margin: 4px 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #1a1a1a;
+
+}
+
+#products .pro .des i {
+    color: rgb(236, 236, 0);
+}
+
+#products .pro button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #e2ece2;
+    font-weight: 500;
+    color: #1faf69;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 20px;
+    bottom: 30px
+}
+
+#products .pro button i {
+    line-height: 55px;
+}
+
+.pro-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* banner section */
+
+#banner {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.banner-div {
+    top: 15%;
+    position: relative;
+    text-align: center;
+    padding: 120px;
+    width: 60%;
+    background-color: #f6f8f6;
+    z-index: 222;
+    box-shadow: 5px 5px 30px 5px rgb(0, 0, 0, 0.06);
+    border-radius: 20px;
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.banner-div h4{
+    color: white;
+    font-size: 20px
+}
+
+.banner-div h2{
+    color: white;
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+.banner-div h2 span{
+    color: rgb(245, 72, 72);
+}
+
+
+
+#banner img {
+    width: 20%;
+    position: absolute;
+}
+
+#banner .leaf1 {
+    bottom: 50px;
+    left: 50px;
+    transform: rotate(-20deg);
+}
+
+#banner .leaf {
+    top: 200px;
+    right: 60px;
+    transform: rotate(-20deg);
+}
