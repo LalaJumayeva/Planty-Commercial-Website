@@ -17,10 +17,9 @@ body {
 }
 
 
-
 /* header */
 #header {
-    z-index: 11;
+    z-index: 331;
     position: sticky;
     top: 0;
     left: 0;
@@ -196,7 +195,7 @@ body {
 
 /* section p1 classes */
 .section-p1 {
-    padding: 40px 100px;
+    padding: 40px 130px;
 }
 
 
@@ -215,7 +214,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 20px 0;
+    margin: 40px 0;
     transition: 0.2s ease;
 }
 
@@ -224,6 +223,13 @@ body {
 
 }
 
+#products h2 {
+    font-weight: 600;
+}
+
+#products p {
+    font-size: 25px;
+}
 
 .pro img {
     width: 100%;
@@ -286,7 +292,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    margin: 40px 0;
+    margin: 40px 0 140px 0;
 }
 
 .banner-div {
@@ -306,18 +312,19 @@ body {
 
 
 
-.banner-div h4{
+.banner-div h4 {
     color: white;
     font-size: 20px
 }
 
-.banner-div h2{
+.banner-div h2 {
     color: white;
     font-size: 35px;
     padding: 10px 0;
+    font-weight: 600;
 }
 
-.banner-div h2 span{
+.banner-div h2 span {
     color: rgb(245, 72, 72);
 }
 
@@ -338,4 +345,51 @@ body {
     top: 200px;
     right: 60px;
     transform: rotate(-20deg);
+}
+
+/* small banners */
+
+#banners {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banners .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 600px;
+    height: 50vh;
+    background-color: #f6f8f6;
+    box-shadow: 5px 5px 30px 5px rgb(0, 0, 0, 0.06);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    color: white;
+}
+
+#banners .banner-box:hover button{
+background-color: #f8f9fa;
+color: #000000;
+}
+
+#banners .box1 {
+    background-image: url("images/banner-2/cactus.jpg");
+}
+
+#banners .box2 {
+    background-image: url("images/banner-2/app.png");
+}
+
+
+.banner-box h4 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#banners p {
+    font-size: 18px;
+    padding-bottom: 15px;
 }
