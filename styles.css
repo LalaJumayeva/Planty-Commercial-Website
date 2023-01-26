@@ -303,7 +303,7 @@ body {
     width: 60%;
     background-color: #f6f8f6;
     z-index: 222;
-    box-shadow: 5px 5px 30px 5px rgb(0, 0, 0, 0.06);
+    box-shadow: 5px 5px 30px 5px rgb(0, 0, 0, 0.3);
     border-radius: 20px;
     background-image: url("images/banner.jpg");
     background-size: cover;
@@ -370,9 +370,9 @@ body {
     color: white;
 }
 
-#banners .banner-box:hover button{
-background-color: #f8f9fa;
-color: #000000;
+#banners .banner-box:hover button {
+    background-color: #f8f9fa;
+    color: #000000;
 }
 
 #banners .box1 {
@@ -392,4 +392,89 @@ color: #000000;
 #banners p {
     font-size: 18px;
     padding-bottom: 15px;
+}
+
+/* banners 3 */
+#banners3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+
+#banners3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 30%;
+    height: 30vh;
+    background-color: #f6f8f6;
+    box-shadow: 5px 5px 30px 5px rgb(0, 0, 0, 0.06);
+    background-size: cover;
+    background-position: center;
+    padding-left: 35px;
+    border-radius: 10px;
+}
+
+#banners3 .boxa {
+    background-image: url("images/banner-2/uv.jpg");
+}
+
+
+#banners3 .boxb {
+    background-image: url("images/banner-2/uv2.png");
+}
+
+#banners3 .boxc {
+    background-image: url("images/banner-2/uv3.jpg");
+}
+
+#banners3 h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#banners3 h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* newsletter */
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("images/newsletter.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 40px 0;
+    height: 30vh;
+}
+
+#newsletter h4 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+#newsletter p {
+    font-size: 22px;
+}
+
+#newsletter span {
+    font-weight: 600;
+    color: rgb(235, 154, 6);
+}
+
+#newsletter .input-group {
+    width: 40%;
+    display: flex;
+}
+
+#newsletter .input-group button{
+    width: 100px;
 }
