@@ -148,11 +148,10 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-left: 50px;
 }
 
 #features .feature-box {
-    margin: 35px 25px;
+    margin: 35px 0px;
     position: relative;
     width: 280px;
     height: 300px;
@@ -225,7 +224,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 40px 0;
+    margin: 20px 0;
     transition: 0.2s ease;
 }
 
@@ -575,6 +574,63 @@ footer .copyright {
 }
 
 
+/* Shop page */
+#page-header{
+    background-image: url(images/cactus.png);
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#page-header p{
+    font-size: 25px;
+}
+#page-header h1,
+#page-header p{
+    color: #ffffff;
+
+}
+
+#pagination{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination a{
+    color: #41b541;
+}
+
+/* single product images */
+
+#details .single-pro-img{
+    width: 40%;
+    margin-right: 50px;
+}
+
+#details .small-img-group{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 32%;
+    cursor: pointer;
+}
+
+
 /* media query */
 @media (max-width: 570px) {
     .section-p1{
@@ -675,6 +731,10 @@ footer .copyright {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
+    }
+
+    #features .feature-box{
+        margin-left: 38px;
     }
 
     .featured-products::-webkit-scrollbar {
