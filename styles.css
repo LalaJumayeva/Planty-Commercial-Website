@@ -683,6 +683,81 @@ footer .copyright {
 }
 
 
+/* blog page */
+#page-header2{
+    background-color: #000000;
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header2 h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#page-header2 p{
+    font-size: 25px;
+}
+#page-header2 h1,
+#page-header2 p{
+    color: #ffffff;
+
+}
+
+#blog-news .main-news{
+    padding: 150px 130px 20px 130px;
+    height: 50vh;
+    background-image: url("images/blog-img/mainimg.jpg");
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#blog-news .main-img-buttons{
+    padding-top: 20px;
+    display: flex;
+}
+
+#blog-news .main-img-buttons button{
+    margin-right: 10px;
+    border-radius: 50px;
+}
+#other-n{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.other-news{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+    margin-top: 40px;
+    width: 30%;
+}
+
+.other-news:hover,
+.main-news:hover{
+    cursor: pointer;
+    box-shadow: 0px 10px 25px rgba(55, 55, 55, 0.06);
+}
+
+.other-news img{
+    padding-bottom: 10px;
+    width: 100%;
+}
+
 /* media query */
 @media (max-width: 570px) {
     .section-p1{
@@ -889,7 +964,26 @@ footer .copyright {
         width: 100%;
     }
 
+    #page-header2 h1 {
+        font-size: 30px;
+        }
 
+
+        #blog-news .main-news {
+            padding: 50px 40px 20px 40px;
+        }
+
+        #other-n {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .other-news {
+            width: 100%;
+        }
 }
 
 
@@ -1034,6 +1128,12 @@ footer .copyright {
         width: 50%;
     }
 
+    #blog-news{
+        padding: 40px 40px;
+    }
 
+    .other-news {
+        width: 32%;
+    }
 
 }
