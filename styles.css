@@ -238,7 +238,8 @@ body {
 }
 
 #products p {
-    font-size: 25px;
+    font-size: 20px;
+    color: #575757;
 }
 
 .pro img {
@@ -588,7 +589,7 @@ footer .copyright {
     padding: 14px;
 }
 #page-header h1{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
 }
 
@@ -614,6 +615,57 @@ footer .copyright {
 
 /* single product images */
 
+#details{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+#details .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+
+#details .single-pro-details h4{
+    padding: 10px 0 10px 0;
+    font-size: 35px;
+}
+
+#details .single-pro-details p{
+    margin-bottom: 0;
+}
+
+#details .single-pro-details span{
+    line-height: 25px;
+}
+
+#details .single-pro-details h2{
+    font-size: 26px;
+}
+
+#details .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+
+#details .single-pro-details input{
+    width: 50px;
+    height: 43px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10;
+}
+
+#details .single-pro-details input:focus{
+    outline: none;
+}
+
+#details .single-pro-details button{
+    margin-left: 10px;
+}
 #details .single-pro-img{
     width: 40%;
     margin-right: 50px;
@@ -626,7 +678,7 @@ footer .copyright {
 }
 
 .small-img-col{
-    flex-basis: 32%;
+    flex-basis: 24%;
     cursor: pointer;
 }
 
@@ -821,6 +873,23 @@ footer .copyright {
     footer .copyright{
         padding: 20px 10px;
     }
+
+    /* single products */
+    #details{
+        padding: 30px 50px;
+        flex-direction: column;
+    }
+
+    #details .single-pro-img{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #details .single-pro-details {
+        width: 100%;
+    }
+
+
 }
 
 
@@ -955,4 +1024,16 @@ footer .copyright {
     #newsletter .input-group{
         width: 100%;
     }
+
+    /* single product */
+    #details{
+        padding: 50px;
+    }
+
+    #details .single-pro-img{
+        width: 50%;
+    }
+
+
+
 }
