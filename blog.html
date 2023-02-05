@@ -17,34 +17,89 @@
 
 <body>
     <section id="header">
-        <a href="#"><img src="images/logo.png" class="logo"></a>
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li id="shoppingbag" ><a href="card.html"> <i class="fa-solid fa-basket-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
                 <div id="sign-in-mob">
-                    <a href="#">Log in</a>
-                    <button type="button" class="btn btn-dark btn-lg">Sign up</button>
+                    <a  class="show-login" href="#">Log in</a>
+                    <button type="button" class="btn btn-dark show-signup">Sign up</button>
                 </div>
 
             </ul>
 
         </div>
         <div id="sign-in">
-            <a href="#">Log in</a>
-            <button type="button" class="btn btn-dark">Sign up</button>
+            <a class="show-login2" href="#">Log in</a>
+            <button type="button" class="btn btn-dark show-signup2">Sign up</button>
         </div>
 
         <div id="hamburger">
             <a href=""> <i class="fa-solid fa-basket-shopping fa-xl"></i></a>
             <i class="fa-solid fa-bars fa-xl"></i>
         </div>
-    </section>
 
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="loginform">
+                <h2>Log In</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-element">
+                    <label for="passsword">Password</label>
+                    <input type="text" placeholder="Enter password" id="password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button class="btn btn-outline-dark">Sign in</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-2">
+            <div class="close-btn">&times;</div>
+            <div class="loginform">
+                <h2>Sign Up</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-element">
+                    <label for="passsword">Password</label>
+                    <input type="text" placeholder="Enter password" id="password">
+                </div>
+                <div class="form-element">
+                    <label for="passsword">Verify Password</label>
+                    <input type="text" placeholder="Enter password again" id="password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button class="btn btn-outline-dark">Sign up</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">I already have an account</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <section id="page-header2">
         <h1>#WritingsFromOurTeam</h1>
         <p>“We all know that plants and trees are very essential for our environment, but we still chop down trees for various reasons” posted on Oct 16.</p>
@@ -171,7 +226,7 @@
             <a href="">Delivery Service</a>
             <a href="">Privacy Policy</a>
             <a href="">Terms and Conditions</a>
-            <a href="">FAQ</a>
+            <a href="faq.html">FAQ</a>
             <a href="">Contact Us</a>
         </div>
         <div class="col">
