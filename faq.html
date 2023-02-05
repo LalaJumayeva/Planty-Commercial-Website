@@ -17,165 +17,149 @@
 
 <body>
     <section id="header">
-        <a href="#"><img src="images/logo.png" class="logo"></a>
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="products.html">Products</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="shoppingbag"><a href="card.html"> <i class="fa-solid fa-basket-shopping"></i></a></li>
+                <li id="shoppingbag" ><a href="card.html"> <i class="fa-solid fa-basket-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
                 <div id="sign-in-mob">
-                    <a href="#">Log in</a>
-                    <button type="button" class="btn btn-dark btn-lg">Sign up</button>
+                    <a  class="show-login" href="#">Log in</a>
+                    <button type="button" class="btn btn-dark show-signup">Sign up</button>
                 </div>
 
             </ul>
 
         </div>
         <div id="sign-in">
-            <a href="#">Log in</a>
-            <button type="button" class="btn btn-dark">Sign up</button>
+            <a class="show-login2" href="#">Log in</a>
+            <button type="button" class="btn btn-dark show-signup2">Sign up</button>
         </div>
 
         <div id="hamburger">
             <a href=""> <i class="fa-solid fa-basket-shopping fa-xl"></i></a>
             <i class="fa-solid fa-bars fa-xl"></i>
         </div>
-    </section>
 
-    <section id="details" class="section-p1">
-        <div class="single-pro-img">
-            <img src="images/products/ginger.jpg" width="100%" id="mainimg" alt="">
-
-            <div class="small-img-group">
-                <div class="small-img-col">
-                    <img src="images/products/ginger.jpg" width="100%" class="small-img" alt="">
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="loginform">
+                <h2>Log In</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter email" id="email">
                 </div>
-                <div class="small-img-col">
-                    <img src="images/products/ginger2.jpg" width="100%" class="small-img" alt="">
+                <div class="form-element">
+                    <label for="passsword">Password</label>
+                    <input type="text" placeholder="Enter password" id="password">
                 </div>
-                <div class="small-img-col">
-                    <img src="images/products/ginger3.jpg" width="100%" class="small-img" alt="">
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
                 </div>
-                <div class="small-img-col">
-                    <img src="images/products/ginger4.jpg" width="100%" class="small-img" alt="">
+                <div class="form-element">
+                    <button class="btn btn-outline-dark">Sign in</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">Forgot Password</a>
                 </div>
             </div>
+        </div>
+
+        <div class="popup-2">
+            <div class="close-btn">&times;</div>
+            <div class="loginform">
+                <h2>Sign Up</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-element">
+                    <label for="passsword">Password</label>
+                    <input type="text" placeholder="Enter password" id="password">
+                </div>
+                <div class="form-element">
+                    <label for="passsword">Verify Password</label>
+                    <input type="text" placeholder="Enter password again" id="password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button class="btn btn-outline-dark">Sign up</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">I already have an account</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="page-header3">
+        <h1>#FrequentlyAskedQuestions</h1>
+        <p>Everything you need to know about products and billing</p>
+    </section>
+
+    <section id="questions">
+        <div class="question">
+            <h3>Can I change my plan later?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut commodi saepe sint fugiat quod
+                mollitia ab ad architecto dolorum distinctio exercitationem, quas provident quae doloremque. Harum
+                dolores adipisci officia!</p>
         </div>
         
 
-        <div class="single-pro-details">
-            <h6>Home / Products</h6>
-            <p>Natural Garden</p>
-            <h4>Ginger</h4>
-            <h2>$25.99</h2>
-            <select>
-                <option>
-                    Select Amount
-                </option>
-                <option>
-                    5+ kg
-                </option>
-                <option>
-                    4 kg
-                </option>
-                <option>
-                    3 kg
-                </option>
-                <option>
-                    2 kg
-                </option>
-                <option>
-                    1 kg
-                </option>
-                <option>
-                    0.5 kg
-                </option>
-            </select>
-            <input type="number" value="1">
-            <button class="btn btn-lg btn-dark">Add To Cart</button>
-            <h4>Product Details</h4>
-            <span>Fusce vehicula non ipsum et scelerisque. Quisque maximus efficitur augue, ac vestibulum massa sagittis
-                non. Sed non tortor sit amet justo scelerisque imperdiet. In orci ligula, sodales et dui a,
-                lacinia mattis dui. Proin quis fringilla sem. Aliquam fermentum justo tortor, vel mollis leo mattis
-                vitae.Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Morbi ultricies nisl eget ex viverra, venenatis finibus lorem pharetra.
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc et
-                nulla tincidunt, elementum velit ac, dignissim lorem. Nulla et luctus justo.</span>
+        <div class="question">
+            <h3>Can I return an item?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut commodi saepe sint fugiat quod
+                mollitia ab ad architecto dolorum distinctio exercitationem, quas provident quae doloremque. Harum
+                dolores adipisci officia!</p>
         </div>
+
+        <div class="question">
+            <h3>What does the guarantee cover?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut commodi saepe sint fugiat quod
+                mollitia ab ad architecto dolorum distinctio exercitationem, quas provident quae doloremque. Harum
+                dolores adipisci officia!</p>
+        </div>
+
+        <div class="question">
+            <h3>Where can I find you?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut commodi saepe sint fugiat quod
+                mollitia ab ad architecto dolorum distinctio exercitationem, quas provident quae doloremque. Harum
+                dolores adipisci officia!</p>
+        </div>
+
+        <div class="question">
+            <h3>How might I get in touch with you?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut commodi saepe sint fugiat quod
+                mollitia ab ad architecto dolorum distinctio exercitationem, quas provident quae doloremque. Harum
+                dolores adipisci officia!</p>
+        </div>
+
+        <div class="question">
+            <h3>Do you charge deals? </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut commodi saepe sint fugiat quod
+                mollitia ab ad architecto dolorum distinctio exercitationem, quas provident quae doloremque. Harum
+                dolores adipisci officia!</p>
+        </div>
+
 
     </section>
 
-    <section id="products" class="section-p1">
-        <h2>Featured Products</h2>
-        <p>Home Accessories, Herbs, and sooo on!</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="images/products2/bottles.jpg" alt="">
-                <div class="des">
-                    <span>Waytoeast Store</span>
-                    <h5> Glass Vase for Hydroponics Plants </h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <h4>$89.99</h4>
-                </div>
-                <button><i class="fa-solid fa-cart-plus fa-lg"></i></button>
+    <section id="extra-questions">
+        <div class="eq">
+            <img src="images/profilepic.jpg" alt="">
+            <div class="eq-text">
+                <h3>Still have questions?</h3>
+                <p>Can't find the answer you are looking for? Please chat to our friendly team!</p>
             </div>
-            <div class="pro">
-                <img src="images/products/galerina.jpg" alt="">
-                <div class="des">
-                    <span>Magic Garden</span>
-                    <h5>Galerina</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <h4>$89.99</h4>
-                </div>
-                <button><i class="fa-solid fa-cart-plus fa-lg"></i></button>
-            </div>
-            <div class="pro">
-                <img src="images/products2/shroomacs.jpg" alt="">
-                <div class="des">
-                    <span>Sucole</span>
-                    <h5>Watering Bulbs Colorful Glass Self Watering Globes</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                    </div>
-                    <h4>$29.99</h4>
-                </div>
-                <button><i class="fa-solid fa-cart-plus fa-lg"></i></button>
-            </div>
-            <div class="pro">
-                <img src="images/products2/monkey.jpg" alt="">
-                <div class="des">
-                    <span>Rainteam</span>
-                    <h5>3 Packs Animal Decorations Brass Plant Hange</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <h4>$12.99</h4>
-                </div>
-                <button><i class="fa-solid fa-cart-plus fa-lg"></i></button>
-            </div>
+            <button class="btn btn-dark btn-lg">Get in touch</button>
         </div>
     </section>
 
@@ -215,7 +199,7 @@
             <a href="">Delivery Service</a>
             <a href="">Privacy Policy</a>
             <a href="">Terms and Conditions</a>
-            <a href="">FAQ</a>
+            <a href="faq.html">FAQ</a>
             <a href="">Contact Us</a>
         </div>
         <div class="col">
