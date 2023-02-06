@@ -124,7 +124,7 @@ body {
 
 .popup.active {
     top: 250%;
-    left: 0%;
+    left: 50%;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: top 0ms ease-in-out 0ms,
@@ -211,7 +211,7 @@ body {
 
 .popup-2.active {
     top: 300%;
-    left:50%;
+    left: 50%;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: top 0ms ease-in-out 0ms,
@@ -1043,7 +1043,7 @@ footer .copyright {
 }
 
 
-#application .video{
+#application .video {
     width: 70%;
     height: 100%;
     margin: 30px auto 0 auto;
@@ -1053,6 +1053,110 @@ footer .copyright {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+/* contact */
+
+#page-header.contact {
+    background-image: url("images/chat.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#contact-det {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-det .details {
+    width: 50%;
+}
+
+#contact-det .details h4 {
+    padding: 10px 0;
+}
+
+#contact-det .details h5 {
+    padding-bottom: 10px;
+}
+
+#contact-det .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+#contact-det .details li i {
+    font-size: 14px;
+    padding-right: 20px;
+    margin: 0px;
+}
+
+#contact-det .details li p {
+    margin: 0;
+    font-size: 18px;
+}
+
+#contact-det .map {
+    width: 50%;
+    height: 500px;
+}
+
+#contact-det .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#details-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#details-form h3 {
+    color: #2a6f2a;
+}
+
+#details-form button {
+    margin-top: 10px;
+    width: 200px;
+}
+
+#details-form form {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#details-form input {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+}
+
+#details-form .staff {
+    display: flex;
+    flex-direction: column;
+}
+
+#details-form .staff .staff-details {
+    padding-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#details-form .staff img {
+    width: 70px;
+    border-radius: 40px;
+    margin-right: 15px;
+}
+
+#details-form .staff p {
+    margin-bottom: 8px;
 }
 
 
@@ -1288,31 +1392,68 @@ footer .copyright {
         width: 100%;
     }
 
-    
-    #about-head.section-p1{
+
+    #about-head.section-p1 {
         padding: 20px;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
 
-    #about-head img{
+    #about-head img {
         width: 65%;
         height: auto;
-        margin-bottom: 20px ;
+        margin-bottom: 20px;
     }
+
     #about-head div {
         padding-left: 0px;
     }
 
-    #application{
+    #application {
         margin-bottom: 20px;
     }
 
-    #application .video{
+    #application .video {
         width: 100%;
         padding: 20px;
     }
+
+    #contact-det {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    #contact-det .details {
+        width: 100%;
+    }
+
+    #contact-det .map {
+    width: 100%;
+    height: 500px;
+}
+
+#details-form {
+    flex-direction: column;
+    padding: 10px;
+}
+#details-form form {
+    width: 100%;
+}
+
+#details-form .staff {
+    padding: 50px 10px;
+}
+
+#details-form button {
+    width: 100%;
+}
+
+#page-header.contact h1{
+    font-size: 35px;
+}
 
 }
 
@@ -1470,7 +1611,7 @@ footer .copyright {
         width: 32%;
     }
 
-    #about-head.section-p1{
+    #about-head.section-p1 {
         padding: 20px;
         align-items: center;
         justify-content: center;
@@ -1481,12 +1622,25 @@ footer .copyright {
         padding-left: 0px;
         margin-bottom: 10px;
     }
-    #about-head img{
+
+    #about-head img {
         width: 65%;
         height: auto;
     }
 
-    #application .video{
+    #application .video {
         width: 100%;
+    }
+
+    #contact-det {
+        padding: 40px 30px;
+    }
+
+    #details-form {
+        padding: 20px;
+    }
+    
+    #details-form .staff{
+        padding-top: 50px;
     }
 }
