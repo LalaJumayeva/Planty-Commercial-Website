@@ -1001,6 +1001,11 @@ footer .copyright {
     border-radius: 10px;
 }
 
+#extra-questions .img-text{
+    display: flex;
+    align-items: center;
+}
+
 #extra-questions .eq img {
     width: 100px;
     height: 100px;
@@ -1597,12 +1602,50 @@ footer .copyright {
         font-size: 35px;
     }
 
+    #page-header3 h1 {
+        font-size: 25px;
+    }
+
+    #questions {
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 30px;
+    }
+    
+    #questions .question{
+        width: 100%;
+    }
+
+    #extra-questions {
+        height: 33vh;
+        padding: 30px 10px;
+    }
+
+    #extra-questions .eq img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        margin-right: 10px;
+    }
+
+    #extra-questions .eq {
+        padding: 10px 10px;
+        flex-direction: column;
+    }
+
+    #extra-questions .eq button{
+        position: relative;
+    }
+
+    #page-header3 {
+        padding: 14px 14px 14px 30px;
+    }
 }
 
 
 
 
-@media (min-width:570px) and (max-width: 900px) {
+@media (min-width:570px) and (max-width: 950px) {
 
     #navbar {
         display: flex;
@@ -1790,4 +1833,14 @@ footer .copyright {
     #cart {
         padding: 40px 30px
     }
+
+    #extra-questions {
+        padding: 30px 30px;
+        height: 20vh;
+    }
+
+    #extra-questions .eq-text {
+        width: 50%;
+    }
+
 }
