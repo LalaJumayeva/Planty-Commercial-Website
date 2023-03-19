@@ -8,3 +8,5 @@ Languages:
 
 Frameworks: 
 -Bootstrap
+
+[Link to the Planty Commercial Website](https://lalajumayeva.github.io/Planty-Commercial-Website/)
